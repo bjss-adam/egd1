@@ -1,31 +1,30 @@
 import React from 'react';
+import IncreaseButton from './IncreaseButton';
 import './App.css';
 
 class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = { number: 1 };
+  }
+
+  increaseNumberInState = () => {
+    this.setState((currentState) => ({ number: currentState.number + 1 }))
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>
-            Enzyme 101
-          </h1>
-
           <p>
-            Let's learn about Enyzme.
+            Current number is: {this.state.number}
           </p>
 
-          <p>
-            Follow the link below to find out more.
-          </p>
-
-          <a
-            className="link"
-            href="https://airbnb.io/enzyme/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Enzyme
-          </a>
+          <IncreaseButton
+            currentNumber={this.state.number}
+            handleIncrease={this.increaseNumberInState}
+          />
         </header>
       </div>
     );
