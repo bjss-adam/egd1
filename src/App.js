@@ -13,6 +13,11 @@ class App extends React.Component {
           <p>
             Let's learn about Enyzme.
           </p>
+
+          <p>
+            Follow the link below to find out more.
+          </p>
+
           <a
             className="link"
             href="https://airbnb.io/enzyme/"
