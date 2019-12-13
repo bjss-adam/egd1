@@ -5,16 +5,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>
+          Enzyme 101
+        </h1>
+
         <p>
-          Welcome to the application!
+          Let's learn about Enyzme.
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="link"
+          href="https://airbnb.io/enzyme/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Enzyme
         </a>
       </header>
     </div>
